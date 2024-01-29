@@ -1,14 +1,12 @@
-import Logo from "@/components/logo"
-import { Button } from "@/components/ui/button"
-import { Plus } from "lucide-react"
-import { OrganizationSwitcher, UserButton } from "@clerk/nextjs"
+import Navbar from "./_components/navbar"
 
 const DashBoardLayout = ({ children }: { children: React.ReactNode }) => {
     return (
-        <div>
+        <div className="h-full">
+            <Navbar />
             {children}
         </div>
-    )
+    );
 }
 
 
